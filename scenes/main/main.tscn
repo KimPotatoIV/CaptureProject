@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://c47x8eel6ycd6"]
+
+[ext_resource type="PackedScene" uid="uid://dd5mcbig7go0g" path="res://scenes/terrain/terrain.tscn" id="1_hyk8p"]
+[ext_resource type="PackedScene" uid="uid://c2tkmgvl4eiem" path="res://scenes/hud/hud.tscn" id="1_iuonh"]
+[ext_resource type="Script" uid="uid://ji2mtbxu3b1b" path="res://scenes/main/main.gd" id="1_k2fmo"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_k2fmo")
+
+[node name="HUD" parent="." instance=ExtResource("1_iuonh")]
+
+[node name="Terrain" parent="." instance=ExtResource("1_hyk8p")]

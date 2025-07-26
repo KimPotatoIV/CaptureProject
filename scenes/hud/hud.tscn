@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2tkmgvl4eiem"]
+
+[ext_resource type="Script" uid="uid://itgbutv21rnq" path="res://scenes/hud/hud.gd" id="1_48c2t"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6kolt"]
+font_size = 40
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_48c2t")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 240.0
+offset_bottom = 55.0
+text = "KimPotatoIV"
+label_settings = SubResource("LabelSettings_6kolt")
